@@ -11,6 +11,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "peerDependencies": {
+    "react": "*",
+    "@tscircuit/debug-viewer":"*",
+    "@tscircuit/pcb-viewer": "*",
+    "@tscircuit/react-fiber": "*",
+    "@tscircuit/schematic-viewer": "*"
+  },
   "devDependencies": {
     "@storybook/react": "^7.1.0",
     "@storybook/react-vite": "^7.1.0",
