@@ -4,18 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@storybook/react": "^7.1.0",
+    "@storybook/react-vite": "^7.1.0",
     "@tscircuit/debug-viewer": "^1.0.0",
     "@tscircuit/pcb-viewer": "^1.2.2",
     "@tscircuit/react-fiber": "^1.0.3",
     "@tscircuit/schematic-viewer": "^1.0.5",
     "esbuild": "^0.18.14",
     "esbuild-runner": "^2.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.1.0",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
   }
