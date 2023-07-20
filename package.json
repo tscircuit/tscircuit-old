@@ -12,15 +12,17 @@
   "author": "",
   "license": "ISC",
   "peerDependencies": {
-    "react": "*",
-    "@tscircuit/debug-viewer":"*",
+    "@tscircuit/debug-viewer": "*",
     "@tscircuit/pcb-viewer": "*",
     "@tscircuit/react-fiber": "*",
-    "@tscircuit/schematic-viewer": "*"
+    "@tscircuit/schematic-viewer": "*",
+    "@tscircuit/builder": "*",
+    "react": "*"
   },
   "devDependencies": {
     "@storybook/react": "^7.1.0",
     "@storybook/react-vite": "^7.1.0",
+    "@tscircuit/builder": "^1.2.3",
     "@tscircuit/debug-viewer": "^1.0.0",
     "@tscircuit/pcb-viewer": "^1.2.2",
     "@tscircuit/react-fiber": "^1.0.3",
