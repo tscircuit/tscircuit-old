@@ -4,7 +4,7 @@ import { useRenderedElements } from "@tscircuit/react-fiber"
 import { Schematic } from "@tscircuit/schematic-viewer"
 
 export const CircuitEditor = ({ children }: any) => {
-  return <Schematic>{children}</Schematic>
+  // return <Schematic>{children}</Schematic>
   const { elements, loading } = useRenderedElements(children)
 
   if (loading) return null
