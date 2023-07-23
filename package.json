@@ -34,7 +34,7 @@
     "@storybook/react-webpack5": "^7.1.0",
     "@storybook/testing-library": "^0.2.0",
     "@tscircuit/builder": "^1.2.3",
-    "@tscircuit/debug-viewer": "^1.0.7",
+    "@tscircuit/debug-viewer": "^1.0.8",
     "@tscircuit/pcb-viewer": "^1.2.2",
     "@tscircuit/react-fiber": "^1.0.3",
     "@tscircuit/schematic-viewer": "^1.0.6",

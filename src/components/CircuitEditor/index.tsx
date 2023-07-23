@@ -9,5 +9,20 @@ export const CircuitEditor = ({ children }: any) => {
 
   if (loading) return null
 
-  return <DebugViewer soup={elements} schematic />
+  return (
+    <div
+      style={{
+        width: "100%",
+        minHeight: 600,
+        backgroundColor: "#000",
+        position: "relative",
+        display: "flex",
+      }}
+    >
+      <div style={{ color: "white" }}>sidebar</div>
+      <div style={{ flexGrow: 1 }}>
+        <DebugViewer soup={elements} schematic />
+      </div>
+    </div>
+  )
 }
