@@ -24,6 +24,7 @@ export const CircuitEditor = ({ children }: any) => {
     <div
       style={{
         width: "100%",
+        border: "1px solid rgba(0,0,0,0.1)",
         minHeight: 600,
         position: "relative",
         display: "flex",
