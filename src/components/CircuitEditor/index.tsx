@@ -15,9 +15,8 @@ type ViewName = keyof typeof SIDEBAR_CONTENT
 const VIEWS = Object.keys(SIDEBAR_CONTENT) as ViewName[]
 
 export const CircuitEditor = ({ children }: any) => {
-  // return <Schematic>{children}</Schematic>
   const { elements, loading } = useRenderedElements(children)
-  const [selectedView, setSelectedView] = useState<ViewName>("schematic_viewer")
+  const [selectedView, setSelectedView] = useState<ViewName>("pcb_viewer")
 
   if (loading) return null
 
@@ -48,7 +47,13 @@ export const CircuitEditor = ({ children }: any) => {
           <Schematic style={{ height: 600 }} soup={elements} />
         )}
         {selectedView === "pcb_debugger" && <DebugViewer soup={elements} pcb />}
-        {selectedView === "pcb_viewer" && <PCBViewer />}
+        {selectedView === "pcb_viewer" && (
+          <div
+            style={{ width: "100%", minHeight: 600, backgroundColor: "#111" }}
+          >
+            <PCBViewer soup={elements} />
+          </div>
+        )}
       </div>
     </div>
   )
