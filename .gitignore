@@ -3,3 +3,4 @@ dist
 .deeper
 .yalc
 yalc.lock
+.vercel
