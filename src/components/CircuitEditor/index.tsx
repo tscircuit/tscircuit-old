@@ -14,9 +14,17 @@ const SIDEBAR_CONTENT = {
 type ViewName = keyof typeof SIDEBAR_CONTENT
 const VIEWS = Object.keys(SIDEBAR_CONTENT) as ViewName[]
 
-export const CircuitEditor = ({ children }: any) => {
+export const CircuitEditor = ({
+  children,
+  defaultView,
+}: {
+  children: any
+  defaultView: ViewName
+}) => {
   const { elements, loading } = useRenderedElements(children)
-  const [selectedView, setSelectedView] = useState<ViewName>("pcb_viewer")
+  const [selectedView, setSelectedView] = useState<ViewName>(
+    defaultView ?? "pcb_viewer",
+  )
 
   if (loading) return null
 

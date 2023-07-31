@@ -4,7 +4,7 @@ import { Reg5V } from "./Reg5V"
 
 export const ArduinoNano = () => {
   return (
-    <CircuitEditor>
+    <CircuitEditor defaultView="schematic_viewer">
       {/* <resistor
         name="R1"
         sch_x={0}
