@@ -13,9 +13,13 @@ export const Reg5V = () => {
           right_size: 1,
           top_size: 0,
         }}
-        port_labels={{}}
+        port_labels={{
+          "1": "vout",
+          "2": "gnd",
+          "3": "vin",
+        }}
       />
-      {/* <trace path={[".5v > positive", ".LM117 > 1"]} /> */}
+      <trace path={[".5v > .positive", ".LM117 > .vout"]} />
     </>
   )
 }
