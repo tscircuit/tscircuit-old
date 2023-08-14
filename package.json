@@ -39,7 +39,7 @@
     "@storybook/testing-library": "^0.2.0",
     "@tscircuit/builder": "^1.2.15",
     "@tscircuit/debug-viewer": "^1.0.8",
-    "@tscircuit/pcb-viewer": "^1.2.6",
+    "@tscircuit/pcb-viewer": "^1.2.7",
     "@tscircuit/react-fiber": "^1.0.5",
     "@tscircuit/schematic-viewer": "^1.0.14",
     "@types/react": "^18.2.15",
