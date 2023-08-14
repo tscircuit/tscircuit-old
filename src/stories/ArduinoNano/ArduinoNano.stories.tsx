@@ -1,6 +1,7 @@
 import React from "react"
 import { CircuitEditor } from "../../components/CircuitEditor"
 import { Reg5V } from "./Reg5V"
+import * as builder from "@tscircuit/builder"
 
 export const ArduinoNano = () => {
   return (

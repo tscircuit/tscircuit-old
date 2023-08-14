@@ -19,7 +19,7 @@ export const CircuitEditor = ({
   defaultView,
 }: {
   children: any
-  defaultView: ViewName
+  defaultView?: ViewName
 }) => {
   const { elements, loading } = useRenderedElements(children)
   const [selectedView, setSelectedView] = useState<ViewName>(
