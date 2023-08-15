@@ -1,8 +1,10 @@
+import React from "react"
+
 export const Reg5V = () => {
   return (
     <>
-      <powersource name="5v" voltage="5volt" cx={0} cy={0} />
-      {/* <netalias name="5v" cx={0} cy={0} /> */}
+      {/* <powersource name="5v" voltage="5volt" cx={0} cy={0} /> */}
+      <netalias name="5v" cx={0} cy={0} />
       <bug
         sch_x={3}
         sch_y={0}
@@ -20,8 +22,10 @@ export const Reg5V = () => {
           "2": "gnd",
           "3": "vin",
         }}
-      />
-      <trace path={[".5v > .positive", ".LM117 > .vout"]} />
+      >
+        <smtpad pin="1" x={0} y={0} width={10} height={10} shape="rect" />
+      </bug>
+      {/* <trace path={[".5v > .5v", ".LM117 > .vout"]} /> */}
     </>
   )
 }
