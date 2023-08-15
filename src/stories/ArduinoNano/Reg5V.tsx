@@ -4,7 +4,7 @@ export const Reg5V = () => {
   return (
     <>
       {/* <powersource name="5v" voltage="5volt" cx={0} cy={0} /> */}
-      <netalias name="5v" cx={0} cy={0} />
+      <netalias net="5v" cx={0} cy={0}></netalias>
       <bug
         sch_x={3}
         sch_y={0}
@@ -23,9 +23,9 @@ export const Reg5V = () => {
           "3": "vin",
         }}
       >
-        <smtpad pin="1" x={0} y={0} width={10} height={10} shape="rect" />
+        <smtpad name="1" x={0} y={0} width={10} height={10} shape="rect" />
       </bug>
-      {/* <trace path={[".5v > .5v", ".LM117 > .vout"]} /> */}
+      {/* <trace path={[".5v", ".LM117 > .vout"]} /> */}
     </>
   )
 }
