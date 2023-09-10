@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "upgrade-deps": "npm add -D @tscircuit/builder @tscircuit/react-fiber @tscircuit/schematic-viewer @tscircuit/pcb-viewer @tscircuit/debug-viewer"
   },
   "keywords": [],
   "author": "",
@@ -37,11 +38,11 @@
     "@storybook/react-vite": "^7.1.0",
     "@storybook/react-webpack5": "^7.1.0",
     "@storybook/testing-library": "^0.2.0",
-    "@tscircuit/builder": "^1.2.15",
+    "@tscircuit/builder": "^1.2.22",
     "@tscircuit/debug-viewer": "^1.0.8",
     "@tscircuit/pcb-viewer": "^1.2.7",
-    "@tscircuit/react-fiber": "^1.0.5",
-    "@tscircuit/schematic-viewer": "^1.0.14",
+    "@tscircuit/react-fiber": "^1.0.6",
+    "@tscircuit/schematic-viewer": "^1.0.17",
     "@types/react": "^18.2.15",
     "@vitejs/plugin-react": "^4.0.3",
     "esbuild": "^0.18.14",
