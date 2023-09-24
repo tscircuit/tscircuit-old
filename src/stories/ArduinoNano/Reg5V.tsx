@@ -9,7 +9,7 @@ export const Reg5V = () => {
         and setting positions manually! */}
       <netalias net="vin" cx={1} cy={-1}></netalias>
       <netalias net="5v" cx={5} cy={-1}></netalias>
-      <netalias net="gnd" cx={3} cy={2}></netalias>
+      <netalias net="gnd" rotation="180deg" cx={3} cy={2}></netalias>
       <bug
         sch_x={3}
         sch_y={0}
